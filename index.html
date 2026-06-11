@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AccentAce UI</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <!-- SCREEN 1: LOGIN -->
+      <section class="phone-screen login-screen active" id="loginScreen">
+        <div class="status-bar">
+          <span>9:41</span>
+          <div class="status-icons">
+            <span>▂▃▅</span>
+            <span>◔</span>
+            <span>▁</span>
+          </div>
+        </div>
+
+        <div class="hero login-hero">
+          <div class="logo-circle">🎙</div>
+          <h1>AccentAce</h1>
+          <p>AI Pronunciation Coach</p>
+          <span>Speak clearly. Confidently.</span>
+        </div>
+
+        <div class="card login-card">
+          <h2>Welcome back! 👋</h2>
+          <p>Log in to continue your learning journey</p>
+
+          <label>Email address</label>
+          <div class="input-wrap">
+            <span class="input-icon">✉</span>
+            <input type="email" value="maheentakir@gmail.com" />
+            <span class="ok">✓</span>
+          </div>
+
+          <label>Password</label>
+          <div class="input-wrap">
+            <span class="input-icon">🔒</span>
+            <input type="password" value="password123" />
+            <button class="eye-btn" type="button">👁</button>
+          </div>
+
+          <div class="strength">
+            <span>Strong</span>
+            <div class="bar"><div class="bar-fill"></div></div>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button class="primary-btn">Log In</button>
+
+          <div class="or-text">or continue with</div>
+
+          <div class="social-row">
+            <button class="social-btn google">G</button>
+            <button class="social-btn apple"></button>
+            <button class="social-btn facebook">f</button>
+          </div>
+
+          <p class="bottom-link">
+            Don’t have an account? <a href="#">Sign Up</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- SCREEN 2: ONBOARDING -->
+      <section class="phone-screen onboarding-screen" id="onboardingScreen">
+        <div class="status-bar light">
+          <span>9:41</span>
+          <div class="status-icons">
+            <span>▂▃▅</span>
+            <span>◔</span>
+            <span>▁</span>
+          </div>
+        </div>
+
+        <div class="top-row">
+          <button class="back-btn">←</button>
+          <div class="onboarding-hero">
+            <div>
+              <h2>Let’s personalize<br />your learning!</h2>
+              <p>
+                Answer a few questions to create your perfect learning
+                experience.
+              </p>
+            </div>
+            <div class="robot">🤖</div>
+          </div>
+        </div>
+
+        <div class="progress-dots">
+          <span class="dot active">1</span>
+          <span class="line"></span>
+          <span class="dot">2</span>
+          <span class="line"></span>
+          <span class="dot">3</span>
+          <small>Step 1 of 3</small>
+        </div>
+
+        <div class="card form-card">
+          <h3>1. Why do you want to improve your pronunciation?</h3>
+
+          <div class="choice selected">
+            <div><strong>Study</strong><small>For academic success</small></div>
+            <span>◉</span>
+          </div>
+          <div class="choice">
+            <div>
+              <strong>Work</strong><small>For career advancement</small>
+            </div>
+            <span>○</span>
+          </div>
+          <div class="choice">
+            <div>
+              <strong>Travel</strong
+              ><small>To communicate while traveling</small>
+            </div>
+            <span>○</span>
+          </div>
+          <div class="choice">
+            <div>
+              <strong>Social Communication</strong
+              ><small>To speak confidently</small>
+            </div>
+            <span>○</span>
+          </div>
+
+          <h3>2. Preferred learning style</h3>
+          <div class="style-grid">
+            <div class="mini-card">
+              <span>📅</span>
+              <strong>Daily Practice</strong>
+            </div>
+            <div class="mini-card selected">
+              <span>💬</span>
+              <strong>Conversation Based</strong>
+            </div>
+            <div class="mini-card">
+              <span>▶</span>
+              <strong>Video Lessons</strong>
+            </div>
+          </div>
+
+          <button class="primary-btn">Continue →</button>
+        </div>
+      </section>
+
+      <!-- SCREEN 3: GOAL SELECTION -->
+      <section class="phone-screen goal-screen" id="goalScreen">
+        <div class="status-bar light">
+          <span>9:41</span>
+          <div class="status-icons">
+            <span>▂▃▅</span>
+            <span>◔</span>
+            <span>▁</span>
+          </div>
+        </div>
+
+        <div class="top-row goal-head">
+          <button class="back-btn">←</button>
+          <div class="goal-title">
+            <h2>Choose Your<br />Learning Goal</h2>
+            <p>Select a plan that fits your schedule and commitment.</p>
+          </div>
+          <div class="target">🎯</div>
+        </div>
+
+        <div class="goal-card">
+          <div class="goal-card-head">
+            <div>
+              <h3>Daily Goal</h3>
+              <small>Build consistency every day</small>
+            </div>
+            <span class="pill green">Recommended</span>
+          </div>
+
+          <div class="option-grid three">
+            <div class="mini-option">10<br /><small>Minutes a day</small></div>
+            <div class="mini-option selected">
+              20<br /><small>Minutes a day</small>
+            </div>
+            <div class="mini-option">30<br /><small>Minutes a day</small></div>
+          </div>
+        </div>
+
+        <div class="goal-card">
+          <div class="goal-card-head">
+            <div>
+              <h3>Weekly Goal</h3>
+              <small>Stay on track every week</small>
+            </div>
+          </div>
+
+          <div class="option-grid three">
+            <div class="mini-option">
+              3<br /><small>Sessions per week</small>
+            </div>
+            <div class="mini-option selected">
+              5<br /><small>Sessions per week</small>
+            </div>
+            <div class="mini-option">
+              7<br /><small>Sessions per week</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="goal-card">
+          <div class="goal-card-head">
+            <div>
+              <h3>Monthly Goal</h3>
+              <small>Achieve more with a monthly plan</small>
+            </div>
+          </div>
+
+          <div class="option-grid three">
+            <div class="mini-option">Beginner<br /><small>Plan</small></div>
+            <div class="mini-option selected">
+              Intermediate<br /><small>Plan</small>
+            </div>
+            <div class="mini-option">Advanced<br /><small>Plan</small></div>
+          </div>
+        </div>
+
+        <button class="primary-btn">Continue →</button>
+        <p class="note">🔒 You can change your goal anytime</p>
+      </section>
+
+      <!-- SCREEN 4: CONVERSATION -->
+      <section class="phone-screen conversation-screen" id="conversationScreen">
+        <div class="status-bar dark">
+          <span>9:41</span>
+          <div class="status-icons">
+            <span>▂▃▅</span>
+            <span>◔</span>
+            <span>▁</span>
+          </div>
+        </div>
+
+        <div class="conv-header">
+          <button class="back-btn light-btn">←</button>
+          <h2>Conversation</h2>
+          <button class="more-btn">⋯</button>
+        </div>
+
+        <div class="session-pill">● Practice Session <span>05:32</span></div>
+
+        <div class="avatar-area">
+          <div class="avatar">👩‍🦰</div>
+        </div>
+
+        <div class="chat-area">
+          <div class="bubble bot">
+            Great! Now please say the following sentence.
+            <div class="quote">"I would like to visit London."</div>
+          </div>
+
+          <div class="bubble user">
+            <small>You said:</small>
+            <div>I would like to visit <span>London.</span></div>
+          </div>
+
+          <div class="score-card">
+            <div class="score-ring">
+              <span>82%</span>
+            </div>
+            <div>
+              <strong>Good job! 🎉</strong>
+              <p>You’re doing great.</p>
+            </div>
+          </div>
+
+          <div class="feedback-card">
+            <strong>Feedback</strong>
+            <p>The word London is mispronounced. Try saying:</p>
+            <div class="pronounce">London</div>
+            <small>Sounds like: /ˈlʌn.dən/</small>
+          </div>
+        </div>
+
+        <div class="action-row">
+          <button>↺<span>Replay</span></button>
+          <button class="mic-btn">🎤<span>Tap to Speak</span></button>
+          <button>↻<span>Retry</span></button>
+          <button>⏸<span>End</span></button>
+        </div>
+
+        <nav class="bottom-nav">
+          <span>⌂<small>Home</small></span>
+          <span>📊<small>Progress</small></span>
+          <span class="active">🎙<small>Practice</small></span>
+          <span>📖<small>Lessons</small></span>
+          <span>👤<small>Profile</small></span>
+        </nav>
+      </section>
+    </div>
+  </body>
+</html>
